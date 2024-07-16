@@ -1,5 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import time
 import statistics
@@ -16,8 +18,8 @@ def extract_specific_tables(url, dividend_url, beta_url):
         time.sleep(2)  # Allow some time for the page to load
 
         # Extract the current stock price
-        price_element = driver.find_element(By.CSS_SELECTOR, ".text-4xl.font-bold.inline-block")
-        current_price = float(price_element.text.replace(',', ''))
+        price_element = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".text-4xl.font-bold.block.sm\\:inline")))
+        current_price = float(price_element.text.strip())
 
         # Extract page source and parse with BeautifulSoup
         soup = BeautifulSoup(driver.page_source, 'html.parser')
@@ -60,7 +62,7 @@ def extract_specific_tables(url, dividend_url, beta_url):
 
         # Open the beta webpage
         driver.get(beta_url)
-        time.sleep(1)  # Allow some time for the page to load
+        time.sleep(2)  # Allow some time for the page to load
 
         # Extract the suggested beta
         suggested_beta = extract_beta(driver.page_source)
