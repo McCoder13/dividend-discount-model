@@ -6,7 +6,7 @@ This tool allows you to analyze stock data including current price, future price
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dividend-discount-model.git
+   git clone https://github.com/mccoder13/dividend-discount-model.git
    cd dividend-discount-model
    
 2. Install the required libraries using pip:
