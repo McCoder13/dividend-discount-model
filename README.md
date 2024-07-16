@@ -10,13 +10,14 @@ This tool allows you to analyze stock data including current price, future price
    ```bash
    git clone https://github.com/your-username/stock-analysis-tool.git
    cd stock-analysis-tool
-Install the required libraries using pip:
-   ```bash
-   pip install -r requirements.txt
+   
+2. Install the required libraries using pip:
+      ```bash
+      pip install -r requirements.txt
 
 ### Usage
 
-2. Run the script in your terminal:
+3. Run the script in your terminal:
 
    ```bash
    python stock_analysis_tool.py
