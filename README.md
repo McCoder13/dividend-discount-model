@@ -6,8 +6,8 @@ This tool allows you to analyze stock data including current price, future price
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/stock-analysis-tool.git
-   cd stock-analysis-tool
+   git clone https://github.com/your-username/dividend-discount-model.git
+   cd dividend-discount-model
    
 2. Install the required libraries using pip:
       ```bash
@@ -17,12 +17,12 @@ This tool allows you to analyze stock data including current price, future price
 3. Run the script in your terminal:
 
    ```bash
-   python stock_analysis_tool.py
+   python scrape_stock_analysis.py
 
 4. You should see:
    
    ```bash
-   Enter a ticker symbol when prompted. You can also type "help" for a list of 100 biggest companies that pay dividends or "quit" to exit.
+   Enter a ticker symbol when prompted. You can also type "help" for a list or "quit" to exit.
 
 ## Financial Values Used
 
