@@ -29,8 +29,10 @@ This tool allows you to analyze stock data including current price, future price
 ### Market Risk Premium
 This is used in the calculation of the required rate of return. It typically represents the additional return expected by investors for taking on higher-risk investments compared to risk-free assets.
 
-### Default value used: 4.62%
-30-Year Treasury Yield: This is used as a proxy for the risk-free rate in the required rate of return calculation.
+Default value used: 4.62%
+
+### 30-Year Treasury Yield 
+This is used as a proxy for the risk-free rate in the required rate of return calculation.
 
 Default value used: 4.45%
 
