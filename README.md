@@ -21,6 +21,10 @@ This tool allows you to analyze stock data including current price, future price
 
    ```bash
    python stock_analysis_tool.py
+
+4. You should see:
+   
+   ```bash
    Enter a ticker symbol when prompted. You can also type "help" for a list of 100 biggest companies that pay dividends or "quit" to exit.
 
 Financial Values Used
